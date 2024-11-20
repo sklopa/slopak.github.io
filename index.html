@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система збору і попередження повітряних загроз</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Your Logo" width="200" height="100" />
+            </a>
+            <h1>Система збору і попередження повітряних загроз</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#introduction" onclick="showSection(event, 'introduction')">Чому цей сайт потрібний?</a></li>
+                <li><a href="#about" onclick="showSection(event, 'about')">Про нас</a></li>
+                <li><a href="#features" onclick="showSection(event, 'features')">Особливості</a></li>
+                <li><a href="#map" onclick="showSection(event, 'map')">Карта загроз</a></li>
+                <li><a href="#subscribe" onclick="showSection(event, 'subscribe')">Підписка</a></li>
+                <li><a href="#report" onclick="showSection(event, 'report')">Повідомити про загрозу</a></li>
+                <li><a href="#contact" onclick="showSection(event, 'contact')">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="introduction" class="container my-5">
+            <p class="mb-4">У сучасному світі, де загрози можуть виникати раптово і непередбачувано, безпека стає одним із головних пріоритетів для кожного громадянина. В умовах постійно зростаючої кількості викликів, таких як природні катаклізми, техногенні аварії або військові дії, оперативне інформування населення про можливу небезпеку може врятувати безліч життів. Саме тому наша система збору та попередження повітряних загроз створена для того, щоб надати вам найактуальнішу інформацію у найкоротші терміни.</p>
+            
+            <h3>Як працює наша система?</h3>
+            <p class="mb-4">Ми використовуємо передові технології збору, аналізу та обробки даних, що забезпечують точність і швидкість передачі інформації. Джерела інформації включають:</p>
+            <ul class="mb-4">
+                <li><strong>Державні служби моніторингу</strong> – для отримання офіційних даних про потенційні загрози.</li>
+                <li><strong>Радари та супутники</strong> – для виявлення руху об’єктів у повітрі, таких як ракети чи безпілотники.</li>
+                <li><strong>Мережа волонтерів і місцевих спостерігачів</strong> – для виявлення загроз у реальному часі.</li>
+                <li><strong>Інтеграцію штучного інтелекту</strong> – для швидкого аналізу отриманої інформації та виявлення потенційних загроз.</li>
+            </ul>
+        
+            <h3>Що отримує користувач?</h3>
+            <ol class="mb-4">
+                <li><strong>Оперативні сповіщення</strong> – Наша платформа забезпечує своєчасне інформування про загрози у вашому регіоні через SMS, мобільний додаток, електронну пошту або веб-сайт. Ви дізнаєтеся про небезпеку раніше, ніж вона встигне стати реальною загрозою.</li>
+                <li><strong>Геолокаційна точність</strong> – Система адаптується до вашого місцезнаходження, що дозволяє отримувати інформацію, актуальну саме для вашого регіону.</li>
+                <li><strong>Рекомендації щодо дій</strong> – У сповіщеннях надаються чіткі інструкції, як діяти у разі загрози: знайти найближче укриття, зберігати спокій, а також які заходи необхідно вжити для безпеки вашої родини.</li>
+                <li><strong>Додатковий функціонал</strong>
+                    <ul>
+                        <li>Карта безпечних місць у вашому місті чи регіоні.</li>
+                        <li>Інтеграція з календарем для планування подій з урахуванням можливих загроз.</li>
+                        <li>Аналітичні звіти для підвищення вашої обізнаності про поточну ситуацію.</li>
+                    </ul>
+                </li>
+            </ol>
+        
+            <h3>Чому варто обрати нашу платформу?</h3>
+            <ul class="mb-4">
+                <li><strong>Швидкість та надійність</strong>: наша система здатна обробляти величезні обсяги інформації та миттєво передавати сповіщення.</li>
+                <li><strong>Доступність</strong>: платформа доступна для всіх, незалежно від віку чи технічних знань.</li>
+                <li><strong>Прозорість</strong>: ми співпрацюємо з офіційними державними органами та міжнародними організаціями, щоб гаран тувати точність даних.</li>
+                <li><strong>Інноваційність</strong>: використання штучного інтелекту, машинного навчання та прогнозування дозволяє нашій системі бути на крок попереду загроз.</li>
+            </ul>
+        
+            <h3>Наша місія</h3>
+            <p class="mb-4">Ми прагнемо створити світ, де кожен громадянин почуватиметься в безпеці незалежно від зовнішніх обставин. Наша мета – зробити сучасні технології доступними кожному для забезпечення захисту та впевненості у завтрашньому дні.</p>
+        
+            <h3>Долучайтесь до нас!</h3>
+            <p class="mb-4">Зареєструйтесь у нашій системі вже сьогодні, щоб бути впевненими, що ви і ваші близькі зможете вчасно дізнатися про можливу небезпеку. Разом ми зможемо зробити цей світ безпечнішим для всіх!</p>
+        
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="images/1.jpg" alt="Зображення 1" class="img-fluid rounded" style="object-fit: cover;">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/2.jpg" alt="Зображення 2" class="img-fluid rounded" style="object-fit: cover;">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/3.jpg" alt="Зображення 3" class="img-fluid rounded" style="object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container my-5">
+            <h2 class="text-center">Про нас</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p>Наша система призначена для моніторингу повітряних загроз та оперативного сповіщення населення. Ми використовуємо сучасні технології для забезпечення безпеки громадян.</p>
+                    
+                    <h3>Наша місія</h3>
+                    <p>Забезпечити кожного громадянина доступом до надійної та своєчасної інформації про можливі загрози. Ми віримо, що сучасні технології мають служити безпеці людей і допомагати у збереженні життя навіть в умовах найскладніших викликів.</p>
+            
+                    <h3>Що ми робимо?</h3>
+                    <ol>
+                        <li><strong>Моніторинг у реальному часі</strong> – Ми безперервно відстежуємо ситуацію у повітряному просторі, використовуючи передові технології, щоб виявляти та оцінювати загрози ще до того, як вони стануть небезпечними.</li>
+                        <li><strong>Оперативне сповіщення</strong> – Наша система забезпечує швидку передачу інформації через SMS, мобільний додаток, електронну пошту або інші засоби зв’язку, гарантуючи, що ви дізнаєтесь про небезпеку одразу після її виявлення.</li>
+                        <li><strong>Аналіз і прогнозування</strong> – Завдяки використанню штучного інтелекту та машинного навчання ми не тільки інформуємо про поточні загрози, але й працюємо над прогнозуванням можливих сценаріїв, що дозволяє діяти на випередження.</li>
+                        <li><strong>Освітня діяльність</strong> – Ми активно працюємо над підвищенням обізнаності населення щодо правил безпеки у разі надзвичайних ситуацій, надаючи рекомендації та інструкції, які можуть врятувати життя.</li>
+                    </ol>
+            
+                    <h3>Наші технології</h3>
+                    <p>Ми використовуємо сучасні інструменти, щоб забезпечити точність і швидкість роботи системи:</p>
+                    <ul>
+                        <li>Радари та супутникові системи для моніторингу повітряного простору.</li>
+                        <li>Штучний інтелект для аналізу великих обсягів даних і швидкого визначення загроз.</li>
+                        <li>Хмарні технології для забезпечення стабільності та безперебійності роботи системи.</li>
+                        <li>Геолокаційні сервіси для точного визначення регіонів, які можуть зазнати впливу загрози.</li>
+                    </ul>
+            
+                    <h3>Наш підхід</h3>
+                    <p>Ми ставимо інтереси та безпеку людей на перше місце. Саме тому наша система орієнтована на доступність і простоту використання. Кожен користувач — незалежно від віку чи рівня технічних знань — може легко налаштувати отримання сповіщень та зрозуміти рекомендації, що надаються.</p>
+            
+                    <h3>Чому обирають нас?</h3>
+                    <ul>
+                        <li><strong>Надійність</strong>: Ми співпрацюємо з державними органами, міжнародними організаціями та провідними технологічними компаніями, щоб гарантувати точність даних.</li>
+                        <li><strong>Інноваційність</strong>: Постійно вдосконалюємо нашу систему, впроваджуючи нові технології та підходи </li>
+                        <li><strong>Прозорість</strong>: Ми відкриті до зворотного зв’язку та завжди працюємо на благо громади.</li>
+                        <li><strong>Орієнтація на результат</strong>: Наша головна мета — зробити ваше життя безпечнішим.</li>
+                    </ul>
+            
+                    <h3>Наші плани</h3>
+                    <p>Ми продовжуємо розширювати можливості нашої платформи, інтегруючи її з іншими системами безпеки, а також плануємо запустити додаткові сервіси для покращення вашої захищеності.</p>
+            
+                    <p>Обираючи нас, ви отримуєте не просто систему оповіщення, а надійного партнера, що дбає про вашу безпеку.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/1.jpg" alt="Зображення 1" class="img-fluid rounded" style="width: 600px; height: 400px; object-fit: cover;">
+                    <img src="images/2.jpg" alt="Зображення 2" class="img-fluid rounded mt-4" style="width: 600px; height: 400px; object-fit: cover;">
+                    <img src="images/3.jpg" alt="Зображення 3" class="img-fluid rounded mt-4" style="width: 600px; height: 400px; object-fit: cover;">
+                    <img src="images/4.jpg" alt="Зображення 4" class="img-fluid rounded mt-4" style="width: 600px; height: 400px; object-fit: cover;">
+                    <img src="images/5.jpg" alt="Зображення 5" class="img-fluid rounded mt-4" style="width: 600px; height: 400px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Особливості</h2>
+            <ul>
+                <li>Оперативне сповіщення про загрози</li>
+                <li>Аналіз даних у реальному часі</li>
+                <li>Мобільний додаток для швидкого доступу</li>
+                <li>Геолокаційні сповіщення для конкретних регіонів</li>
+                <li>Інтеграція з державними та міжнародними системами моніторингу</li>
+                <li>Рекомендації щодо дій у разі загрози</li>
+                <li>Доступ до мапи укриттів та безпечних зон</li>
+                <li>Офлайн-доступ до важливої інформації</li>
+                <li>Інтеграція з іншими платформами</li>
+                <li>Персоналізовані налаштування сповіщень</li>
+                <li>Штучний інтелект для прогнозування загроз</li>
+                <li>Хмарне збереження історії сповіщень</li>
+                <li>Підтримка кількох мов</li>
+                <li>Звукові та візуальні сигнали тривоги</li>
+                <li>Можливість взаємодії з іншими користувачами</li>
+                <li>Мультиплатформеність</li>
+                <li>Регулярне оновлення системи</li>
+            </ul>
+        </section>
+
+        <section id="map">
+            <h2>Карта загроз</h2>
+            <div id="threat-map">
+                <iframe src="https://vadimklimenko.com/map/" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <h2>Підписка на сповіщення</h2>
+            <form id="subscription-form">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" required>
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Підписатися</button>
+            </form>
+            <p id="subscription-message"></p>
+        </section>
+
+        <section id="report" class="container my-5">
+            <h2 class="text-center">Повідомити про загрозу</h2>
+            <form id="report-form" class="mt-4">
+                <div class="form-group">
+                    <label for="threat-type">Тип загрози:</label>
+                    <select class="form-control" id="threat-type" required>
+                        <option value="" disabled selected>Оберіть тип загрози</option>
+                        <option value="повітряна атака">Повітряна атака</option>
+                        <option value="бомбардування">Бомбардування</option>
+                        <option value="вибух">Вибух</option>
+                        <option value="інше">Інше</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="threat-description">Опис загрози:</label>
+                    <textarea class="form-control" id="threat-description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="location">Місцезнаходження:</label>
+                    <select class="form-control" id="location" required>
+                        <option value="" disabled selected>Оберіть місцезнаходження</option>
+                        <option value="Київ">Київ</option>
+                        <option value="Львів">Львів</option>
+                        <option value="Одеса">Одеса</option>
+                        <option value="Харків">Харків</option>
+                        <option value="Дніпро">Дніпро</option>
+                        <option value="інше">Інше (вкажіть в описі)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Повідомити</button>
+            </form>
+            <p id="report-message" class="mt-3"></p>
+        </section>
+
+        <section id="contact">
+            <h2>Контакти</h2>
+            <p>Якщо у вас є питання або пропозиції, будь ласка, зв'яжіться з нами:</p>
+            <p><i class="fas fa-envelope"></i> Email: info@airthreatalert.com</p>
+            <p><i class="fas fa-phone"></i> Телефон: +380 123 456 789</p>
+            <h3>Соціальні мережі</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <img src="images/facebook.png" alt="Facebook" style="width: 30px; height: 30px;">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <img src="images/twitter.png" alt="Twitter" style="width: 30px; height: 30px;">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <img src="images/instagram.png" alt="Instagram" style="width: 30px; height: 30px;">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Система збору і попередження повітряних загроз. Всі права захищені.</p>
+    </footer>
+
+    <script src="src/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
