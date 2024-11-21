@@ -55,3 +55,33 @@ function submitForm(event) {
     // Оновити список загроз
     loadThreats();
 }
+
+async function fetchAlerts() {
+    try {
+        const response = await fetch('https://alerts.in.ua/api/alerts'); // Замість цього URL вставте свій API
+        const data = await response.json();
+
+        const alertsContainer = document.getElementById('alerts-container');
+        alertsContainer.innerHTML = ''; // Очищення контейнера перед додаванням нових тривог
+
+        if (data.alerts && data.alerts.length > 0) {
+            data.alerts.forEach(alert => {
+                const alertElement = document.createElement('div');
+                alertElement.className = 'alert';
+                alertElement.innerText = `Тривога: ${alert.message} | Регiон: ${alert.region}`;
+                alertsContainer.appendChild(alertElement);
+            });
+        } else {
+            alertsContainer.innerHTML = '<p>Немає активних тривог.</p>';
+        }
+    } catch (error) {
+        console.error('Помилка при отриманні тривог:', error);
+        document.getElementById('alerts-container').innerHTML = '<p>Не вдалося отримати дані про тривоги.</p>';
+    }
+}
+
+// Виклик функції для отримання тривог при завантаженні сторінки
+fetchAlerts();
+
+// Оновлення даних кожні 5 хвилин
+setInterval(fetchAlerts, 300000);
